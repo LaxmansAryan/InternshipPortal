@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- CSS FILE -->
+    <link href="css/Com_Intn_Page.css" rel="stylesheet"  />
+
+    <!-- Header Part -->
+    <head>
+        <meta charset="utf-8">
+        <title>Completed Internship Details</title>       
+    
+    </head>
+
+    <!-- Form Part -->
+    <body>
+        <div class="center">
+            <h1>Completed Internship Details</h1>
+            <form action="Com_Intn_Page.php" method="post" name="com_intn_page">
+                
+                <div class="num_field">
+                    <input type="number" name="st_id" required>
+                    <span></span>
+                    <label>Student Id</label>
+                </div>                
+
+                <div class="txt_field">
+                    <input type="text" name="c_name" required>
+                    <span></span>
+                    <label>Company Name</label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="text" name="c_type" required>
+                    <span></span>
+                    <label>Type of project</label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="text" name="c_tech" required>
+                    <span></span>
+                    <label>Technologies used in the project</label>
+                </div>
+                
+                <div class="txt_field">
+                    <input type="text" name="c_role" required>
+                    <span></span>
+                    <label>Role in the projects</label>
+                </div>
+
+                <div class="num_field">
+                    <input type="number" name="c_duration" required>
+                    <span></span>
+                    <label>Duration (In Months) </label>
+                </div>
+
+                <div class="date_select">
+                    <input type="date" name="c_start"required>
+                    <span></span>
+                    <label>Date of Starting </label>
+                </div>
+
+                <div class="date_select">
+                    <input type="date" name="c_end" required>
+                    <span></span>
+                    <label>Date of Ending </label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="file" name="c_file" required>
+                    <span></span>
+                    <label>Certificate</label>
+                </div>
+
+               
+                <button class="btn" type="button"><a onclick="window.location.href='Student_Page.html'">Back</a></button>
+                <input type="submit" name="com_intn_page" value="Submit">
+            </form>
+            
+    </body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #240b36, #2653ce);
+    height: 200vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.center{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 900px;
+    width: 700px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.center h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2653ce;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2653ce;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+
+/*--- Class Selection ---*/
+.class_selection{
+    border: 2px dotted #adadad;
+    display: block;
+    background: white;
+}
+/*--- For Numerical --*/
+form .num_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.num_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.num_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.num_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2653ce;
+    transition: .5s;
+}
+.num_field input:focus ~ label,
+.num_field input:valid ~ label{
+  top: -5px;
+  color: #2653ce;
+}
+.num_field input:focus ~ span::before,
+.num_field input:valid ~ span::before{
+  width: 100%;
+}
+/*---Password part---*/
+form .pass_word{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.pass_word input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.pass_word label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.pass_word span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2653ce;
+    transition: .5s;
+}
+.pass_word input:focus ~ label,
+.pass_word input:valid ~ label{
+  top: -5px;
+  color: #2653ce;
+}
+.pass_word input:focus ~ span::before,
+.pass_word input:valid ~ span::before{
+  width: 100%;
+}
+.pass_word{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass_word:hover{
+    text-decoration: underline;
+}
+
+
+
+legend {
+    position: absolute;
+    top: -25px;
+}
+.select {
+    padding-right: 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+.select:hover {
+    color: rgb(0, 0, 0);
+}
+.select {
+    position: relative;
+}
+.select::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: auto 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid white;
+}
+.select:hover::after {
+    border-top-color: black;
+}
+
+
+
+.btn{
+    float: left;
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    background: #2653ce;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+.btn a{
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+}
+input[type="submit"]{
+    float: right;
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    background: #240b36;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
