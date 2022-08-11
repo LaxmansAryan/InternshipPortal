@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+    <!--CSS FILE-->
+    <link href="css/Student_Reg.css" rel="stylesheet" />
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Student Registration Form</title>
+        <link href="" rel="stylesheet" />
+
+    </head>
+
+    <body>
+
+ 
+        <div class="center">
+            <h1>Student Registration Form</h1>
+            <form action=logic.php method="post" name="student_reg">
+                <div class="txt_field">
+                    <td><input type="text" name="st_name" required></td>
+                    <span></span>
+                    <label>First Name</label>
+                </div>
+                <div class="txt_field">
+                    <td><input type="text" name="st_middle" required></td>
+                    <span></span>
+                    <label>Middle Name</label>
+                </div>
+                <div class="txt_field">
+                    <td><input type="text" name="st_surname" required></td>
+                    <span></span>
+                    <label>Surname</label>
+                </div>
+                <div class="pass_word">
+                    <td><input type="varchar" name="st_email" required></td>
+                    <span></span>
+                    <label>Email</label>
+                </div> 
+                <div class="txt_field">
+                    <td><input type="text" name="st_class" required></td>
+                    <span></span>
+                    <label>Class(SY, TY, LY)</label>
+                </div>
+                <div class="txt_field">
+                    <td><input type="text" name="st_div" required></td>
+                    <span></span>
+                    <label>Division</label>
+                </div>
+                <div class="num_field">
+                    <td><input type="number" name="st_roll" required></td>
+                    <span></span>
+                    <label>Roll No.</label>
+                </div>
+                <div class="num_field">
+                    <td><input type="number" name="st_id" required></td>
+                    <span></span>
+                    <label>Member Id</label>
+                </div>
+                <div class="pass_word">
+                    <td><input type="password" name="st_pass" required></td>
+                    <span></span>
+                    <label>Password</label>
+                </div>    
+                <div class="pass_word">
+                    <td><input type="password" name="" required></td>
+                    <span></span>
+                    <label>Confirm Password</label>
+                </div>
+                <button class="btn" type="button"><a onclick="window.location.href='Student_Login.html'">Back</a></button>
+                <input type="submit" name="student_reg" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
